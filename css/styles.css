@@ -117,6 +117,7 @@ color: var(--SLATE, #434455);
 .title-section {
     background-color: #2e2f42;
     padding: 188px 0;
+    background-image: url(../images/bg.jpg);
     
 }
 
@@ -129,12 +130,11 @@ color: var(--WHITE, #FFF);
     font-weight: 700;
     line-height: 1.07;
     letter-spacing: 1.12px;
-    background: var(--NAVY-BLUE, #2E2F42);
+    /* background: var(--NAVY-BLUE, #2E2F42); */
     max-width: 496px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
-    
 
     
 }
@@ -176,6 +176,10 @@ color: var(--WHITE, #FFF);
 .advantages-section {
     padding: 120px 0;
 }
+.advantages-list-icons {
+    display: flex;
+}
+
 .advantages-list {
     display: flex;
     gap: 24px;
@@ -253,6 +257,12 @@ color: var(--WHITE, #FFF);
         line-height: 1.5;
         letter-spacing: 0.32px;
         max-width: 264px;
+}
+.team-icon-list {
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+    justify-content: center;
 }
 
 /* MAIN-CONTAINER: PORTFOLIO-SECTION */

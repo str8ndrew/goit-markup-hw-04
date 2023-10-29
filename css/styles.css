@@ -89,6 +89,10 @@ color: var(--IRIS, #4D5AE5);
     padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+    
+}
+.menu-link-first {
+    color: #404bbf;
 }
 .menu-link::after{
 content: '';
@@ -138,7 +142,9 @@ color: var(--SLATE, #434455);
     padding: 188px 0;
     background-image: linear-gradient(var(--GREY, rgba(46, 47, 66, 0.70)),var(--GREY, rgba(46, 47, 66, 0.70))), url(../images/bg.jpg);
     max-width: 1440px;
-    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -173,6 +179,7 @@ color: var(--WHITE, #FFF);
         height: 56px;
         border: none;
         border-radius: 4px;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       
 }
 .content-button:hover,
@@ -201,6 +208,16 @@ color: var(--WHITE, #FFF);
     justify-content: space-between;
     align-content: center;
 }
+.icon-li-div {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 112px;
+background-color: #f4f4fd;
+border-radius: 4px;
+margin-bottom: 8px;
+
+}
 
 .advantages-list {
     display: flex;
@@ -228,7 +245,6 @@ color: var(--WHITE, #FFF);
         max-width: 264px;
 }
 .icons-li {
-    background-color: #F4F4FD;
     width: 264px;
     height: 112px;
     border: 1px solid var(--LIGHT-SLATE, #8E8F99);
@@ -238,7 +254,6 @@ color: var(--WHITE, #FFF);
     align-content: center;
     padding: 24px 100px;
     gap: 24px;
-    margin-bottom: 8px;
 }
 /* MAIN-CONTAINER: TEAM-SECTION */
 .team-section {

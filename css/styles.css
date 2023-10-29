@@ -504,4 +504,10 @@ justify-content: space-between;
 .div-footer-logo {
     margin-right: 120px;
 }
+.footer-list {
+display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+}
 /* >/ FOOTER-CONTAINER */

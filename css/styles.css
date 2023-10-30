@@ -91,14 +91,19 @@ color: var(--IRIS, #4D5AE5);
     position: relative;
 }
 
-.menu-link::after{
+.current::after{
 content: '';
     position: absolute;
+    width: 100%;
     left: 0;
     bottom: -1px;
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
+    color: #404bbf;
+}
+.current {
+    position: relative;
     color: #404bbf;
 }
 .menu-link:hover,
@@ -250,8 +255,6 @@ margin-bottom: 8px;
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 24px 100px;
-    gap: 24px;
 }
 /* MAIN-CONTAINER: TEAM-SECTION */
 .team-section {
@@ -307,6 +310,7 @@ margin-bottom: 8px;
         line-height: 1.5;
         letter-spacing: 0.32px;
         max-width: 264px;
+        margin-bottom: 8px;
 }
 .team-icon-list {
     display: flex;
@@ -327,22 +331,19 @@ margin-bottom: 8px;
 }
 .team-icon-link:hover,
 .team-icon-link:focus {
-    background-color: #404bbf;
+    background-color: #31D0AA;
 }
 .team-icon-item {
-    background-color: #4D5AE5;
         width: 40px;
         height: 40px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
         align-content: center;
-        padding: 12px 12px;
-        margin-top: 12px;
-        
 }
 .icon-svg-team {
     fill: #f4f4fd;
+}
+.icon-svg-team:hover,
+.icon-svg-team:focus {
+    fill: #31D0AA;
 }
 
 /* MAIN-CONTAINER: PORTFOLIO-SECTION */
@@ -364,7 +365,7 @@ padding-bottom: 120px;
     padding-top: 40px;
         padding-left: 32px;
         padding-right: 32px;
-        padding-bottom: 164px;
+        padding-bottom: 40px;
     background-color: #4D5AE5;
     position: absolute;
     top: 0;
@@ -476,7 +477,7 @@ justify-content: space-between;
     align-content: center;
     align-items: center;
 }
-.team-icon-item-footer {
+/* .team-icon-item-footer {
     background-color: #4D5AE5;
         width: 40px;
         height: 40px;
@@ -486,7 +487,7 @@ justify-content: space-between;
         align-content: center;
         padding: 12px 12px;
         margin-top: 12px;
-}
+} */
 .footer-title {
     color: var(--WHITE, #FFF);
         font-size: 16px;
